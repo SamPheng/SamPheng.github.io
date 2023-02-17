@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>loveHeart</title>
@@ -11,27 +12,31 @@
             margin: 0;
             background: #000;
         }
+
         canvas {
             position: absolute;
             width: 100%;
             height: 100%;
         }
-        p{
+
+        p {
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             color: pink;
             animation: k 1.5s ease-in-out infinite;
         }
-        @keyframes k{
-            100%{
+
+        @keyframes k {
+            100% {
                 font-size: 24px;
                 opacity: 0;
             }
         }
     </style>
 </head>
+
 <body>
     <p>萧筱我爱你</p>
     <canvas id="pinkboard"></canvas>
@@ -234,7 +239,7 @@
                 render();
             }, 10);
         })(document.getElementById('pinkboard'));
-        </script>
+    </script>
 </body>
 
 </html>
